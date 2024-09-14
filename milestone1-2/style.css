@@ -1,0 +1,257 @@
+/* @media(min-width:200px)and(max-width:768px){
+
+    .resume-bulider{
+        padding: 20px;
+    }
+    .left-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-picture{
+        margin-bottom: 10px;
+    }
+    .R-section{
+        flex-direction: column;
+    }
+    h3{
+        font-size: 28px;
+
+
+    }
+    p{
+        font-size: 28px;
+    }
+
+    
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 150px;
+}
+.resume-bulider{
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0,0, 1);
+
+
+
+}
+.left-section{
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    padding: 20px;
+    width: 34%;
+    text-align: center;
+    border-right: 5px solid aqua;
+
+
+}
+.profile-picture{
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 4px solid aqua;
+    margin-bottom: 20px;
+
+
+}
+h1{
+    font-size: 25px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+h3{
+    font-size: 17px;
+    padding: 2%;
+    margin: 20px 0 15 px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 12px aqua;
+}
+ul{
+    list-style-type:fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+ul li{
+    margin: 5px 0;
+}
+.R-section{
+    padding: 22px;
+    width: 70%;
+
+
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 0 14px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 17px;
+    display: block;
+}
+
+button:hover{
+    background-color: rgba(0, 255, 255, 0.925);
+}
+#skills{
+    display: none;
+}  */
+
+
+
+/* General body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px; /* Reduced padding for better use of space on smaller screens */
+}
+
+/* Resume builder styling */
+.resume-bulider {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    background-color: rgb(255, 255, 255);
+    width: 100%; /* Full width for smaller screens */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section styling */
+.left-section {
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    padding: 20px;
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+    border-bottom: 5px solid aqua; /* Border at the bottom for a cleaner look */
+}
+
+/* Profile picture styling */
+.profile-picture {
+    width: 120px; /* Reduced size for smaller screens */
+    height: 120px; /* Reduced size for smaller screens */
+    border-radius: 50%;
+    border: 4px solid aqua;
+    margin: 20px 0;
+}
+
+/* Headings */
+h1 {
+    font-size: 22px; /* Slightly smaller for mobile */
+    margin: 10px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px; /* Adjusted for readability on mobile */
+    padding: 2%;
+    margin: 20px 0;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 8px aqua; /* Slightly smaller shadow */
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px; /* Adjusted for readability on mobile */
+    margin: 0 0 20px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: disc;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right section styling */
+.R-section {
+    padding: 20px; /* Reduced padding for consistency */
+    width: 100%; /* Full width on smaller screens */
+}
+
+/* Button styling */
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black; /* Slightly smaller shadow */
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px; /* Adjusted for mobile */
+    display: block;
+    width: 100%; /* Full width button on mobile */
+    padding: 10px; /* Added padding for easier interaction */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgba(0, 255, 255, 0.925);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .resume-bulider {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+    .left-section {
+        border-right: none; /* Remove border on mobile */
+        border-bottom: 5px solid aqua; /* Border at the bottom for consistency */
+    }
+    .profile-picture {
+        width: 100px; /* Adjusted size for mobile */
+        height: 100px; /* Adjusted size for mobile */
+    }
+    h1 {
+        font-size: 20px; /* Adjusted for readability on mobile */
+    }
+    h3 {
+        font-size: 18px; /* Adjusted for readability on mobile */
+    }
+    p {
+        font-size: 16px; /* Adjusted for readability on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Additional styling for very small screens */
+    .resume-bulider {
+        padding: 5px; /* Further reduced padding */
+    }
+    .left-section, .R-section {
+        padding: 10px; /* Adjusted padding */
+    }
+    .profile-picture {
+        width: 80px; /* Smaller size for very small screens */
+        height: 80px; /* Smaller size for very small screens */
+    }
+    h1 {
+        font-size: 18px; /* Adjusted for very small screens */
+    }
+    h3 {
+        font-size: 16px; /* Adjusted for very small screens */
+    }
+    p {
+        font-size: 14px; /* Adjusted for very small screens */
+    }
+}
