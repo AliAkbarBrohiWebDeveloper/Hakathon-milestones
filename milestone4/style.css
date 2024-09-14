@@ -1,0 +1,138 @@
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Styling for the form */
+form {
+    margin: auto;
+    background-color: rgba(228, 242, 255, 0.068);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 90%; /* Adjust max-width for better mobile handling */
+    box-sizing: border-box;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 1.5em; /* Adjust font size for better scaling */
+}
+
+/* Styling for fieldset */
+fieldset {
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+/* Styling for legend */
+legend {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(34, 29, 29);
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Styling for inputs and textareas */
+input, textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: 100%; /* Ensure full-width on small screens */
+    border: 1px solid aqua;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styling for buttons */
+button {
+    display: block;
+    width: 100%;
+    background-color: rgba(135, 207, 235, 0.87);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-size: 1.1em; /* Use relative units for font-size */
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    color: red;
+}
+
+/* Styling for resume display */
+#resume-display {
+    max-width: 90%; /* Adjust max-width for better mobile handling */
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgba(135, 207, 235, 0.863);
+    border-radius: 8px;
+    background-color: rgb(228, 242, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Styling for resume headings */
+#resume-display h2 {
+    color: black;
+    font-size: 1.3em; /* Adjust font size for better scaling */
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    /* Adjust padding and font sizes for tablets and small screens */
+    form, #resume-display {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    #resume-display h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust padding and font sizes for mobile phones */
+    form, #resume-display {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    #resume-display h2 {
+        font-size: 1em;
+    }
+}
